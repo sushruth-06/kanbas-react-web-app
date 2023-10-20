@@ -1,455 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
     <title>Edit Assignment</title>
-    <link rel="stylesheet" href="edit.css" />
-    <link rel="stylesheet" href="../../styles.css" />
+
+    <link href="../../index.css" rel="stylesheet"/>
+    <link href="./index.css" rel="stylesheet"/>
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
+            href="../../../vendors/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
     />
-    <link
-      href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.4.2/css/all.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="main-edit-assignment-container">
-      <div class="wd-navbar-content">
-        <div class="wd-logo-container wd-navbar-item-container">
-          <a class="wd-navbar-link" href="index.html">
-            <image
-              src="https://instructure-uploads.s3.amazonaws.com/account_145230000000000001/attachments/949/NU_MonoLVX_RGB_RW.png"
-              alt="Logo"
+    <script
+            src="https://kit.fontawesome.com/fea6b74a57.js"
+            crossorigin="anonymous"
+    ></script>
+</head>
+<body>
+<div class="kb-sidebar position-fixed">
+    <div class="kb-sidebar-logo">
+        <a href="#">
+            <img
+                    src="../../../images/neu-logo.png"
+                    width="60px"
+                    height="48px"
             />
-          </a>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/accounts/profile/index.html">
+            <i class="fa fa-2x fa-user kb-sidebar-account"></i>
+            <div class="kb-sidebar-text">Account</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="../../../kanbas/dashboard/index.html">
+            <i class="fa fa-2x fa-gauge kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Dashboard</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-selected">
+        <a href="../home/index.html">
+            <i class="fa fa-2x fa-book kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Courses</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-calendar-check kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Calendar</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-inbox kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Inbox</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-clock kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">History</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-tv kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Studio</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-arrow-right-from-bracket kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Commons</div>
+        </a>
+    </div>
+    <div class="kb-sidebar-unselected">
+        <a href="#">
+            <i class="fa fa-2x fa-question kb-sidebar-icon"></i>
+            <div class="kb-sidebar-text">Help</div>
+        </a>
+    </div>
+</div>
+<div class="wd-flex-row-container">
+    <div class="kb-header kb-header-icon">
+        <i class="fa fa-2x fa-bars"></i>
+    </div>
+    <div class="kb-header wd-flex-grow-1">
+        <nav
+                style="--bs-breadcrumb-divider: '>'"
+                class="kb-header-text"
+                aria-label="breadcrumb"
+        >
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item">CS5610.11744.202310</li>
+                <li class="breadcrumb-item">Assignments</li>
+                <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="kb-header wd-flex-grow-1">
+        <button type="button" class="btn btn-secondary float-end">
+            <i class="fa fa-1x fa-glasses"></i> Student View
+        </button>
+    </div>
+</div>
+<div class="wd-flex-row-container">
+    <div class="kb-header-line wd-flex-grow-1">
+        <hr/>
+    </div>
+</div>
+<div class="wd-flex-row-container">
+    <div class="kb-sub-menu col-2 col-sm-2 d-none d-md-block">
+        <div class="kb-sub-menu-title">
+            202310_2 Fall 2023 Semester
         </div>
-        <!-- Add class navbar-item-active to the item that is active  -->
-        <div class="wd-nav-account wd-navbar-item-container">
-          <a href="../../account/index.html">
-            <i class="fa-regular fa-circle-user wd-nav-item-icon wd-white"></i>
-            <p class="wd-nav-item-text">Account</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="../home/index.html">Home</a>
         </div>
-        <div class="wd-nav-dashboard wd-navbar-item-container">
-          <a href="../../dashboard/index.html">
-            <i class="fa-solid fa-gauge wd-nav-item-icon"></i>
-            <p class="wd-nav-item-text">Dashboard</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Modules</a>
         </div>
-        <div class="wd-nav-courses wd-navbar-item-container navbar-item-active">
-          <a href="../../courses">
-          <i class="fa-solid fa-book wd-nav-item-icon wd-red"></i>
-          <p class="wd-nav-item-text">Courses</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Piazza</a>
         </div>
-        <div class="wd-nav-calendar wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-solid fa-calendar-days wd-nav-item-icon"></i>
-      
-            <p class="wd-nav-item-text">Calendar</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Zoom Meetings</a>
         </div>
-        <div class="wd-nav-inbox wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-solid fa-inbox wd-nav-item-icon"></i>
-      
-            <p class="wd-nav-item-text">Inbox</p>
-          </a>
+        <div class="kb-sub-menu-selected">
+            <a href="../../../kanbas/courses/assignments/index.html"
+            >Assignments</a
+            >
         </div>
-        <div class="wd-nav-history wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-regular fa-clock wd-nav-item-icon"></i>
-      
-            <p class="wd-nav-item-text">History</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Quizzes</a>
         </div>
-        <div class="wd-nav-studio wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-solid fa-tv wd-nav-item-icon"></i>
-      
-            <p class="wd-nav-item-text">Studio</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="../../../kanbas/courses/grades/index.html">Grades</a>
         </div>
-        <div class="wd-nav-commons wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-solid fa-arrow-right-from-bracket wd-nav-item-icon"></i>
-      
-            <p class="wd-nav-item-text">Commons</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">People</a>
         </div>
-        <div class="wd-nav-help wd-navbar-item-container">
-          <a href="#">
-            <i class="fa-regular fa-circle-question wd-nav-item-icon"></i>
-            <p class="wd-nav-item-text">Help</p>
-          </a>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Panopto Video</a>
         </div>
-      </div>
-      <div class="scrollable" style="overflow-x: hidden;"> 
-        <div class="wd-edit-main-page">
-          <div class="container-fluid">
-            <div class="row wd-align-items-start">
-              <div class="col-auto">
-                <i class="fa-solid fa-bars wd-custom-hamburger"></i>
-              </div>
-              <div class="col">
-                <nav
-                  style="--bs-breadcrumb-divider: '>'"
-                  aria-label="breadcrumb"
-                >
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item wd-custom-breadcrumb-header">
-                      <a href="#">CS5610.12631.202410</a>
-                    </li>
-                    <li class="breadcrumb-item wd-custom-breadcrumb-header" aria-current="page">
-                      <a href="">Assignments</a>
-                    </li>
-                    <li class="breadcrumb-item wd-custom-breadcrumb-header-active" aria-current="page">
-                      A1 - HTML + ENV
-
-                    </li>
-                  </ol>
-                </nav>
-              </div>
-            </div>
-
-            <div class="row">
-              <hr class="wd-custom-divider" />
-            </div>
-            <div class="row">
-              <div class="col col-sm-2">
-                <div class="wd-course-navigation">
-                  <div class="wd-navigation-head-text">
-                    <i>202410_1 Fall 2023 Semest...</i>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="../index.html">
-                      <p class="wd-navigation-element-title">Home</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">Modules</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">Piazza</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">Zoom meetings</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element wd-account-navigation-active ">
-                    <a href="../assignments/assignments.html">
-                      <p class="wd-navigation-element-title">
-                        Assignments
-                      </p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">Quizzes</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="../grades/index.html">
-                      <p class="wd-navigation-element-title">Grades</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">People</p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="#">
-                      <p class="wd-navigation-element-title">
-                        Announcements
-                        <i
-                          class="fa fa-eye-slash wd-grey"
-                          aria-hidden="true"
-                        ></i>
-                      </p>
-                    </a>
-                  </div>
-
-                  <div class="wd-navigation-element">
-                    <a href="../settings/coursedetails.html">
-                      <p class="wd-navigation-element-title">Settings</p>
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-sm-10 container-fluid">
-                <div class="row container-fluid">
-                  <div class="col-12 p-0">
-                    <button
-                      type="button"
-                      class="btn btn-secondary float-end cab inline"
-                    >
-                      <i
-                        style="font-size: 1rem"
-                        class="fa-solid fa-ellipsis-vertical wd-grey"
-                      ></i>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Discussions</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Announcements</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Pages</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Files</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Rubrics</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Outcomes</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Collaborations</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Syllabus</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="#">Progress Reports (EAB Navigate)</a>
+        </div>
+        <div class="kb-sub-menu-unselected">
+            <a href="../settings/coursedetails.html">Settings</a>
+        </div>
+    </div>
+    <div class="kb-feed col-10 col-sm-10">
+        <div class="row">
+            <div class="col wd-flex-grow-1">
+                <div class="kb-assignments-published align-self-center float-end">
+                    <i class="fa fa-1x fa-user fa-circle-check align-self-center"></i>
+                    <span class="align-self-center">Published</span>
+                    <button type="button" class="btn btn-secondary btn-sm">
+                        <i class="fa fa-1x fa-user fa-ellipsis-vertical"></i>
                     </button>
-                    <button
-                      type="button"
-                      class="btn btn-danger float-end cab wd-course-status-btn"
-                    >
-                    <i class="fa-solid fa-check-circle" style="color: green"></i> Publish All
-                    </button>
-                  </div>
                 </div>
-
-                <div class="row container-fluid">
-                  <hr
-                    class="wd-custom-divider"
-                    style="margin-top: 10px"
-                  />
-                </div>
-
-                <div class="row container-fluid">
-                  <div class="mb-3 p-1">
-                    <label for="exampleFormControlInput1" class="form-label"
-                      >Assignment Name</label
+            </div>
+        </div>
+        <div>
+            <hr style="margin-top: 0px"/>
+        </div>
+        <div>
+            <form
+                    id="form-edit-profile"
+                    action="../../../kanbas/courses/assignments/index.html"
+            >
+                <div class="mb-3">
+                    <label for="input-edit-assignment-name" class="form-label"
+                    >Assignment Name:</label
                     >
                     <input
-                      type="email"
-                      class="form-control"
-                      id="exampleFormControlInput1"
-                      placeholder="A1- ENV+HTML"
+                            type="text"
+                            class="form-control w-80"
+                            id="input-edit-assignment-name"
+                            value="A1 - ENV + HTML"
                     />
-                  </div>
-                  <div class="mb-3 p-1" >
-                    <textarea
+                </div>
+                <div class="mb-3">
+              <textarea
                       class="form-control"
-                      id="exampleFormControlTextarea1"
+                      id="input-edit-assignment-description"
                       rows="3"
-                    >
-This assignment describes, how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify</textarea
-                    >
-                  </div>
+              >
+This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+            </textarea
+            >
                 </div>
-
-                <div class="row container-fluid mb-3 p-1">
-                  <div class="col col-sm-3 wd-label-text">
-                    <label for="points">Points</label>
-                  </div>
-                  <div class="col col-sm-7">
-                    <div class="col-sm-10 ml-0">
-                      <input type="text" class="form-control" id="textpoints" />
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label">
+                        <label
+                                for="input-edit-assignment-points"
+                                class="form-label float-end"
+                        >Points</label
+                        >
                     </div>
-                  </div>
+                    <div class="col-7">
+                        <div class="mb-3">
+                            <input
+                                    type="number"
+                                    class="form-control w-80"
+                                    id="input-edit-assignment-points"
+                                    value="100"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
 
-                <div class="row container-fluid mb-3 p-1">
-                  <div class="col col-sm-3 wd-label-text">
-                    <div class="form-row">
-                      <label for="assignment-group" class="col-form-label"
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label">
+                        <label
+                                for="input-edit-assignment-group"
+                                class="form-label float-end"
                         >Assignment Group</label
-                      >
+                        >
                     </div>
-                  </div>
-                  <div class="col col-sm-7">
-                    <div class="col-sm-10 ml-0">
-                      <select
-                        id="assignment-group"
-                        class="wd-form-select-style"
-                        aria-label="Default select example"
-                      >
-                        <option selected>None</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                    <div class="col-7">
+                        <select class="form-select">
+                            <option selected>ASSIGNMENTS</option>
+                        </select>
                     </div>
-                  </div>
+                    <div class="col-2"></div>
                 </div>
 
-                <div class="row container-fluid mb-3 p-1">
-                  <div class="col col-sm-3 wd-label-text">
-                    <div class="form-row">
-                      <label for="assignment-group" class="col-form-label"
-                        >Assignment Group</label
-                      >
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label">
+                        <label
+                                for="input-edit-assignment-group"
+                                class="form-label float-end"
+                        >Display Grade as</label
+                        >
                     </div>
-                  </div>
-                  <div class="col col-sm-7">
-                    <div class="col-sm-10 ml-0">
-                      <select
-                        id="assignment-group"
-                        class="wd-form-select-style"
-                        aria-label="Default select example"
-                      >
-                        <option selected>None</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                    <div class="col-7">
+                        <select class="form-select">
+                            <option selected>Percentage</option>
+                        </select>
                     </div>
-                  </div>
+                    <div class="col-2"></div>
                 </div>
 
-                <div class="row container-fluid mb-3 p-1">
-                  <div class="col col-sm-3 wd-label-text"></div>
-                  <div class="col col-sm-7">
-                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Do not count this assignment towards the final grade
-                    </label>
-                  </div>
-
-               
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label"></div>
+                    <div class="col-7">
+                        <div class="form-check">
+                            <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="input-edit-assignment-counted"
+                            />
+                            <label
+                                    class="form-check-label"
+                                    for="input-edit-assignment-counted"
+                            >
+                                Do not count this assignment towards the final grade
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
-
-                <div class="row container-fluid mb-3 p-1">
-                  <div class="col col-sm-3" style="text-align: right; margin-right: 0.1rem;">
-                    <label for="submission-type">Submission Type</label>
+                <!--Edit row-->
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label">Submission Type</div>
+                    <div class="col-7">
+                        <div class="card p-3 kb-edit-box">
+                            <select class="form-select">
+                                <option selected>Online</option>
+                            </select>
+                            <b>Online Entry Options</b>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="input-edit-assignment-text-entry"
+                                        checked
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="input-edit-assignment-text-entry"
+                                >Text Entry
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="input-edit-assignment-website-url"
+                                        checked
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="input-edit-assignment-website-url"
+                                >Website URL
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="input-edit-assignment-media"
+                                        checked
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="input-edit-assignment-media"
+                                >Media Recordings
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="input-edit-assignment-annotation"
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="input-edit-assignment-annotation"
+                                >Student Annotation
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input
+                                        class="form-check-input"
+                                        type="checkbox"
+                                        value=""
+                                        id="input-edit-assignment-file-uploads"
+                                />
+                                <label
+                                        class="form-check-label"
+                                        for="input-edit-assignment-file-uploads"
+                                >File Uploads
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
-                  <div class="col col-sm-7">
-                    
-                      <div class="wd-submission-type" style="border: 1px solid darkgrey;width: inherit;height: auto;padding: 20px;">
-                          <div class="row">
-                              <div class="col col-sm-7 mb-3 pb-1">
-                                  <select id="submission-type" class="form-select" aria-label="Default select example">
-                                      <option selected="">Online</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                  </select>
-                              </div>
-                          </div>
-                          <div class="row">
-                              <div class="col col-sm-7">
-                                  <p class="wd-custom-text"><strong>Online Entry Options</strong></p>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1" checked="">
-                                  <label class="form-check-label" for="flexCheckDefault1">
-                                    Text Entry
-                                  </label>
+                <!--Edit row-->
+                <div class="row kb-edit-chart">
+                    <div class="col-3 kb-edit-chart-label">Submission Type</div>
+                    <div class="col-7">
+                        <div class="card p-3 kb-edit-box" style="padding: 0px!important;">
+                            <div class="card-body">
+                                <b>Assign to</b>
+                                <div class="card p-3">Everyone</div>
+                                <b>Due</b>
+                                <input
+                                        type="date"
+                                        class="form-control mr-sm-2"
+                                        id="input-edit-assign-due"
+                                        value="Sep 18, 2023, 11:59 PM"
+                                />
+                                <div class="row" style="margin-top: 8px;">
+                                    <div class="col-sm-6">
+                                        <label for="input-edit-assign-from" class="form-label"
+                                        ><b>Available from</b></label
+                                        >
+                                        <input
+                                                type="date"
+                                                class="form-control"
+                                                id="input-edit-assign-from"
+                                        />
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="input-edit-assign-until" class="form-label"
+                                        ><b>Until</b></label
+                                        >
+                                        <input
+                                                type="date"
+                                                class="form-control"
+                                                id="input-edit-assign-until"
+                                        />
+                                    </div>
                                 </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked="">
-                                  <label class="form-check-label" for="flexCheckChecked1">
-                                    Website Url
-                                  </label>
-                                </div>
-
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked2" checked="">
-                                  <label class="form-check-label" for="flexCheckChecked2">
-                                    Media Recordings
-                                  </label>
-                                </div>
-
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
-                                  <label class="form-check-label" for="flexCheckChecked3">
-                                    Student Annotation
-                                  </label>
-                                </div>
-
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                  <label class="form-check-label" for="flexCheckChecked">
-                                    File Uploads
-                                  </label>
-                                </div>
-                              </div>
-                          </div>
-                      </div>
-                  
-                  </div>
+                            </div>
+                            <div class="card-footer" style="text-align:center;">
+                                + Add
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
                 </div>
-                <div class="row container-fluid">
-                  <div class="col col-sm-3 wd-label-text">
-                    <label class="form-check-label" for="flexCheckDefault">
-                      Submission Type
-                    </label>
-                  </div>
-                  <div class="col col-sm-7">
-                    <div class="wd-box-submission-type" style="border: 1px solid darkgrey;width: inherit;height: auto;padding: 20px;">
-                      <div class="row mb-3 pb-1">
-                          <div class="wd" style="border: 0.1rem solid rgb(230, 229, 229);width: 45vh;padding: 10px;">
-                              <button id="Assign" type="button" class="btn btn-light wd-custom-button-width">Everyone ×</button>
-                          </div>
-                      </div>
-                      <div class="row mb-3 pb-1">
-                          <label for="due" class="">Due</label>
-                          <input id="due" class="form-control" type="date" value="09-18-2023">
-                      </div>
-                      <div class="row mb-3 pb-1">
-                          <div class="col col-sm-6">
-                              <label for="af" class="">Available From</label>
-                              <input class="form-control" id="af" type="date" value="18-09-2023">
-                          </div>
-                          <div class="col col-sm-6">
-                              <label for="unt" class="">Until</label>
-                              <input class="form-control" id="unt" type="date" value="18-09-2023">
-                          </div>
-                      </div>
-                      <div class="row">
-                          <button type="button" class="btn btn-light"><i class="fa-solid fa-plus"></i>Add</button>
-                      </div>
-                  </div>
-                  </div>
+                <hr/>
+                <div class="wd-flex-row-container">
+                    <div class="wd-flex-grow-1">
+                        <div class="form-check float-start">
+                            <input
+                                    class="form-check-input"
+                                    type="checkbox"
+                                    value=""
+                                    id="input-edit-assignment-changed"
+                            />
+                            <label
+                                    class="form-check-label"
+                                    for="input-edit-assignment-changed"
+                            >
+                                Notify users that this content has changed
+                            </label>
+                        </div>
+                    </div>
+                    <div class="wd-flex-grow-1">
+                        <div class="float-end">
+                            <button type="submit" class="btn btn-secondary">
+                                Cancel
+                            </button>
+                            <button type="submit" class="btn btn-danger">
+                                Save
+                            </button>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="row container-fluid">
-                  <hr
-                    class="wd-custom-divider"
-                    style="margin-top: 10px"
-                  />
-                </div>
-                <div class="row container-fluid">
-                  <div class="col col-sm-3"></div>
-                      <div class="col col-sm-7">
-                          <input class="form-check-input" type="checkbox" id="flexCheckDefault5">
-                          <label class="form-check-label" for="flexCheckDefault5">
-                              Notify users that this content has been changed
-                          </label>
-                      </div>
-                </div>
-
-                <div class="row container">
-                  <div class="col col-sm-12">
-                      <div class="wd-course-action-buttons-custom">
-                          <button type="button" class="btn btn-danger float-end">
-                              Save
-                          </button>
-                          <button type="button" class="btn btn-light float-end" style="margin: 0 0.25rem;">
-                              Cancel
-                          </button>
-                      </div>
-                  </div>
-              </div>
-              </div>
-            </div>
-          </div>
+            </form>
         </div>
-      </div>
     </div>
-  </body>
+</div>
+</body>
 </html>
