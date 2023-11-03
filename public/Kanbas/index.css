@@ -1,139 +1,81 @@
-.wd-flex-row-container {
-    display: flex;
-    flex-direction: row;
-    margin-left: 85px;
-    padding-left: 20px;
+body {
+    font-family: 'Lato', sans-serif;
+    overflow: hidden;
+    margin: 0
 }
 
-.wd-flex-grow-1 {
-    flex-grow: 1;
-}
+/* Navbar Styles Start  */
 
-.kb-sidebar {
-    height: 100%;
-    width: 85px;
-    left: 0;
-    top: 0;
-    text-align: center;
-    background-color: black;
-}
-
-.kb-sidebar div {
-    font-size: 13px;
-    display: block;
-}
-
-.kb-sidebar a {
+a {
     text-decoration: none;
+    cursor: pointer;
 }
 
-.kb-sidebar i {
-    margin: 5px;
+.navbar-content{
+    width: 85px;
+    height: 100vh;
+    background: black;    
+    overflow-y: scroll;
 }
 
-.kb-sidebar-text {
-    padding-bottom: 5px;
+.navbar-item-container{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
 }
 
-.kb-sidebar > .kb-sidebar-logo {
-    background-color: black;
-    padding: 5px;
-    margin: 5px;
+.navbar-item-container a {
+    color: #ffffff;
 }
 
-.kb-sidebar .kb-sidebar-account {
-    color: gray;
+.navbar-item-active {
+    background: white;
 }
 
-.kb-sidebar .kb-sidebar-icon {
-    color: red;
+.navbar-item-active a{
+    color: #D41B2C;
 }
 
-.kb-sidebar > .kb-sidebar-unselected {
-    background-color: black;
+.navbar-item-active .white {
+    color: grey;
 }
 
-.kb-sidebar > .kb-sidebar-unselected .kb-sidebar-text {
+/* This maintains the aspect ratio of the image */
+.logo-container img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-item-icon{
+    font-size: 1.75rem;
+    color: #D41B2C;
+}
+
+.white {
     color: white;
 }
 
-.kb-sidebar > .kb-sidebar-selected {
-    background-color: white;
+.red {
+    color: #D41B2C;
 }
 
-.kb-sidebar > .kb-sidebar-selected .kb-sidebar-text {
-    color: red;
+.nav-item-text {
+    margin: 5px 0;
+    font-size: 0.8rem !important;
 }
 
-.kb-header {
-    margin: 20px 20px 0 0;
+.grey{
+    color: grey;
 }
 
-.kb-header-icon {
-    color: red;
-    vertical-align: middle;
-    width: 0;
+/* Navbar hiding on smaller screens */
+@media (max-width: 768px) {
+    .navbar-content {
+        display: none;
+    }
 }
 
-.kb-header-text {
-    margin-left: 30px;
-    vertical-align: middle;
-    font-size: 1.25em;
-}
-
-.kb-header-line {
-    margin-right: 20px;
-}
-
-.breadcrumb > .breadcrumb-item {
-    color: red;
-}
-
-.breadcrumb > .active {
-    color: black;
-}
-
-.kb-sub-menu {
-    width: 195px;
-}
-
-.kb-sub-menu-title {
-    font-style: italic;
-    font-size: 10px;
-    color: gray;
-}
-
-.kb-sub-menu a {
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.kb-sub-menu > div {
-    padding: 8px 8px 8px 5px;
-}
-
-.kb-sub-menu-selected {
-    border-left-color: black;
-    border-left-width: 2px;
-    border-left-style: solid;
-}
-
-
-.kb-sub-menu-selected a {
-    color: black;
-}
-
-.kb-sub-menu-unselected a {
-    color: red;
-}
-
-.kb-body-text {
-    font-size: 15px;
-    padding: 8px;
-    margin-right: 20px;
-}
-
-.kb-body-text-link {
-    text-decoration: none;
-    color: red;
-}
+/* Navbar Styles End  */
