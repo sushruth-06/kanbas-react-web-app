@@ -1,5 +1,3 @@
-/** @format */
-
 import { Link, useLocation } from "react-router-dom"
 function Nav() {
 	const { pathname } = useLocation()
@@ -14,6 +12,11 @@ function Nav() {
 				to='/Labs/a4'
 				className={`nav-link ${pathname.includes("a4") ? "active" : ""}`}>
 				A4
+			</Link>
+			<Link
+				to='/Labs/a5'
+				className={`nav-link ${pathname.includes("a5") ? "active" : ""}`}>
+				A5
 			</Link>
 			<Link
 				to='/hello'

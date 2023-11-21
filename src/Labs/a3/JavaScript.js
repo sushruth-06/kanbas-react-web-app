@@ -14,6 +14,7 @@ import WorkingWithArrays from "./WorkingWithArrays"
 import AddingAndRemovingDataToFromArrays from "./AddingAndRemovingDataToFromArrays"
 import LoopingThroughArrays from "./LoopingThroughArrays"
 import MapFunctions from "./MapFunctions"
+import JSONStringify from "./JSONStringify"
 import FindFunction from "./FindFunction"
 import FindIndex from "./FindIndex"
 import FilterFunctions from "./FilterFunctions"
@@ -25,7 +26,6 @@ import FunctionDestructing from "./FunctionDestructing"
 import PathParameters from "./PathParameters"
 
 function JavaScript() {
-	console.log("Hello world")
 	return (
 		<div>
 			<h1>JavaScript</h1>
@@ -43,6 +43,7 @@ function JavaScript() {
 			<AddingAndRemovingDataToFromArrays />
 			<LoopingThroughArrays />
 			<MapFunctions />
+			<JSONStringify />
 			<FindFunction />
 			<FindIndex />
 			<FilterFunctions />
